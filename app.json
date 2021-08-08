@@ -35,6 +35,10 @@
         "LOG_CHANNEL": {
             "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
         },
+         "UPDATES_CHANNEL": {
+            "description": "ID of a Bot update channel Eg: -100123456789 "
+            "required" : false
+        },
         "BANNED_USERS": {
             "description": "Banned unwanted members",
             "required": false
