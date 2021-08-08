@@ -32,13 +32,12 @@
         "DATABASE_URL": {
             "description": "MongoDB Database URI for Saving UserID for Broadcast."
         },
+        "UPDATES_CHANNEL": {
+            "description": "ID of Bot update channel. Example: -100123456789",
+            "required": false
+        },
         "LOG_CHANNEL": {
             "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
-        },
-         "UPDATES_CHANNEL": {
-            "description": "ID of a Bot update channel Eg: -100123456789 "
-            "required" false 
-            "value" "-1001482138748 "
         },
         "BANNED_USERS": {
             "description": "Banned unwanted members",
