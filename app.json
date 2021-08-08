@@ -37,8 +37,8 @@
         },
          "UPDATES_CHANNEL": {
             "description": "ID of a Bot update channel Eg: -100123456789 "
-            "required" : false 
-            "value": "-100 "
+            "required" false 
+            "value" "-1001482138748 "
         },
         "BANNED_USERS": {
             "description": "Banned unwanted members",
