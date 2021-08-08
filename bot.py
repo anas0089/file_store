@@ -98,7 +98,7 @@ async def main(bot: Client, message: Message):
                 pass
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/DevsZone)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/tgbotschat)",
                                      disable_web_page_preview=True)
             return
 
@@ -119,7 +119,7 @@ async def main(bot: Client, message: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("Open Link", url=share_link)],
                      [InlineKeyboardButton("Bots Channel", url="https://t.me/Royalbotz"),
-                      InlineKeyboardButton("Support Group", url="https://t.me/DevsZone")]]
+                      InlineKeyboardButton("Support Group", url="https://t.me/tgbotschat")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -311,12 +311,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
-                    ],
-                    [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("Go Home", callback_data="gotohome")
                     ]
                 ]
             )
@@ -349,12 +344,11 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("Support Group", url="https://t.me/tgbotschat"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/Royalbotz")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot")
                     ]
                 ]
             )
@@ -367,7 +361,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/DevsZone).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/tgbotschat).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -390,7 +384,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/DevsZone).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/tgbotschat).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -402,12 +396,11 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("Support Group", url="https://t.me/tgbotschat"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/Royalbotz")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
                     ]
                 ]
             )
