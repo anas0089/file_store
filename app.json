@@ -34,7 +34,8 @@
         },
         "UPDATES_CHANNEL": {
             "description": "ID of Bot update channel. Example: -100123456789",
-            "required": false
+            "required": false ,
+             "value": "-1001482138748"
         },
         "LOG_CHANNEL": {
             "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
