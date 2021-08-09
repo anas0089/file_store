@@ -32,9 +32,9 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 🧑🏻‍💻 **Developer:** @MAKER_03
 
-👥 **Support Group:** [Linux Repositories](https://t.me/tgbotschat)
+👥 **Support Group:** [Tgbotschat](https://t.me/tgbotschat)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/Royalbotz)
+📢 **Updates Channel:** [Royalbotz](https://t.me/Royalbotz)
 """
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Developer:** @AbirHasan2005
